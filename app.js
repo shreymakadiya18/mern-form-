@@ -2,7 +2,7 @@ const path = require("path");
 const app = express();
 const hbs = require("hbs");
 
-require("./db/conn");
+require("./src/db/conn");
 const Register = require("./src/models/registers");
 
 app.use(express.json());
