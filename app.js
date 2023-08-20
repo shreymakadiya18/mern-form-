@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended:false}));
 
 const port = process.env.PORT || 3000;
 
-const staticpath = path.join(__dirname,"../public");
+const staticpath = path.join(__dirname,"./public");
 app.use(express.static(staticpath));
 
 const viewspath = path.join(__dirname,"./templates/views");
